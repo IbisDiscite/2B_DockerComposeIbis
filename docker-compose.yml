@@ -64,6 +64,11 @@ services:
         PORT: '4001'
     depends_on:
         - examples-db
+  #Todayslesson MS
+  todayslesson-ms:
+    image: nicolaszon/2b_todayslesson
+    environment:
+      PORT: '4002'  
   #LDAP
   ibis-ldap:
     image: osixia/openldap:1.1.8
