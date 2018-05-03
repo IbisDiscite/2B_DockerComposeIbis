@@ -30,6 +30,22 @@ services:
       AWARDS_ENTRY: 'awards/'
       EXERCISES_PORT: '4040'
       EXERCISES_ENTRY: 'exercises/'
+  #EXERCISES
+  mysql-standalone:
+    image: mysql:5.6
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: test
+  exercises-mysql:
+     image:
+     environment:
+       PORT: '8086'
+     links:
+       - mysql-standalone
   #Authentication MS
   auth-db:
     image: mysql:5.7
