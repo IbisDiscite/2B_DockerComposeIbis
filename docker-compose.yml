@@ -15,6 +15,8 @@ services:
       SHOW_URLS: 'true'
       AUTHENTICATION_PORT: '4000'
       AUTHENTICATION_ENTRY: 'auth'
+      AUTH_PORT: '4000'
+      AUTH_ENTRY: 'ldap/'
       EXAMPLES_PORT: '4001'
       EXAMPLES_ENTRY: 'examples/'
       UNITS_ENTRY: 'units/'
