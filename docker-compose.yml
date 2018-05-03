@@ -41,7 +41,7 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: test
   exercises-mysql:
-     image:
+     image: sagilm/2b_exercises
      environment:
        PORT: '8086'
      links:
