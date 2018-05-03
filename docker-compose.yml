@@ -30,6 +30,16 @@ services:
       AWARDS_ENTRY: 'awards/'
       EXERCISES_PORT: '4040'
       EXERCISES_ENTRY: 'exercises/'
+  #MAILER
+  mailer:
+    environment:
+      PORT: '4003'
+    depends_on:
+      - "mongo"
+  mongo:
+    ports:
+      - "27017:27017"
+  
   #Authentication MS
   auth-db:
     image: mysql:5.7
