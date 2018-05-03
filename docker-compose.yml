@@ -23,7 +23,7 @@ services:
       TODAYSLESSON_PORT: '4002'
       TODAYSLESSON_ENTRY: 'todayslessons/'
       MAILER_PORT: '4003'
-      MAILER_ENTRY: 'mailes/'
+      MAILER_ENTRY: 'messages/'
       CHAT_PORT: '4004'
       CHAT_ENTRY: 'chat/'
       AWARDS_PORT: '4005'
