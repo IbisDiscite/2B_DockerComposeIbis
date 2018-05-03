@@ -34,7 +34,7 @@ services:
   auth-db:
     image: mysql:5.7
     ports:
-      - "3307:3306"
+      - "3307:3307"
     environment:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_USER: arquisoft
@@ -52,7 +52,7 @@ services:
   examples-db:
     image: mysql:5.7
     ports:
-      - "3309:3306"
+      - "3309:3307"
     environment:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_USER: arquisoft
