@@ -28,7 +28,7 @@ services:
       CHAT_ENTRY: 'chat/'
       AWARDS_PORT: '4005'
       AWARDS_ENTRY: 'awards/'
-      EXERCISES_PORT: '4040'
+      EXERCISES_PORT: '8086'
       EXERCISES_ENTRY: 'exercises/'
   #EXERCISES
   mysql-standalone:
