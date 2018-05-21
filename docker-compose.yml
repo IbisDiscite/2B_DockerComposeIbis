@@ -7,6 +7,11 @@ services:
       - api-gateway
     ports:
       - "80:80"
+  #App Web
+  app-web:
+    image: dafrodriguezro/2b_ibisdiscite_web
+    environment:
+      PORT: '4040'
   #Api Gateway
   api-gateway:
     image: dafrodriguezro/2b_api
